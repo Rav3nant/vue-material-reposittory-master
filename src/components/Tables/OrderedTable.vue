@@ -4,7 +4,9 @@
       <md-table-row slot="md-table-row" slot-scope="{ item }">
         <md-table-cell md-label="ID">{{ item.id }}</md-table-cell>
         <md-table-cell md-label="Nombre">{{ item.name }}</md-table-cell>
-        <md-table-cell md-label="Numero Amigos">{{ item.friends }}</md-table-cell>
+        <md-table-cell md-label="Numero Amigos">{{
+          item.friends
+        }}</md-table-cell>
         <md-table-cell md-label="Pais">{{ item.country }}</md-table-cell>
         <md-table-cell md-label="Ciudad">{{ item.city }}</md-table-cell>
       </md-table-row>

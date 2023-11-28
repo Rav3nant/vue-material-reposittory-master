@@ -5,7 +5,9 @@
         <md-table-cell md-label="Nombre">{{ item.name }}</md-table-cell>
         <md-table-cell md-label="Pais">{{ item.country }}</md-table-cell>
         <md-table-cell md-label="Ciudad">{{ item.city }}</md-table-cell>
-        <md-table-cell md-label="Numero Amigos">{{ item.friends }}</md-table-cell>
+        <md-table-cell md-label="Numero Amigos">{{
+          item.friends
+        }}</md-table-cell>
       </md-table-row>
     </md-table>
   </div>
@@ -48,7 +50,6 @@ export default {
           country: "Malawi",
           city: "Feldkirchen in Kārnten",
         },
-        
       ],
     };
   },

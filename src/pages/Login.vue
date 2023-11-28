@@ -1,13 +1,11 @@
 <template>
   <form>
     <md-card class="md-card-plain">
-    <md-card-header data-background-color="teal">
-      <h4 class="title">Introduce los Datos de tu Cuenta</h4>
-      <p class="category">
-        
-      </p>
-    </md-card-header>
-</md-card>
+      <md-card-header data-background-color="teal">
+        <h4 class="title">Introduce los Datos de tu Cuenta</h4>
+        <p class="category"></p>
+      </md-card-header>
+    </md-card>
 
     <div class="md-layout-item md-small-size-100 md-size-33">
       <md-field>
@@ -22,9 +20,9 @@
       </md-field>
     </div>
     <div class="md-layout-item md-size-100 text-left">
-    <router-link to="user">
-          <md-button class="md-raised md-success">Login</md-button>
-        </router-link> 
+      <router-link to="user">
+        <md-button class="md-raised md-success">Login</md-button>
+      </router-link>
     </div>
   </form>
 </template>

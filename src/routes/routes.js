@@ -60,7 +60,7 @@ const routes = [
         name: "Upgrade to PRO",
         component: UpgradeToPRO,
       },
-      
+
       {
         path: "login",
         name: "Login",
@@ -71,7 +71,6 @@ const routes = [
         name: "Registro",
         component: SignIn,
       },
-      
     ],
   },
 ];

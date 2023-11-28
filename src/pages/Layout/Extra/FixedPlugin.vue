@@ -4,42 +4,34 @@
       <a data-toggle="dropdown">
         <i class="fa fa-cog fa-2x" @click="toggleDropDown"> </i>
       </a>
-      
+
       <ul class="dropdown-menu" :class="{ show: isOpen }">
-        
         <li class="centered-row">
-          
           <div class="text-left text-lg">
             <h3>
-            <span>Chat Placeholder</span>
+              <span>Chat Placeholder</span>
             </h3>
           </div>
-          
-  </li>
-        <li class="button-container">
-          
-                <div class="alert alert-info text-left">
-                  <span>Hiciste la tarea?</span>
-                </div>
-                
         </li>
-        
+        <li class="button-container">
+          <div class="alert alert-info text-left">
+            <span>Hiciste la tarea?</span>
+          </div>
+        </li>
+
         <li class="button-container">
           <div class="alert alert-primary text-right">
-                  <span>Habia tarea?!</span>
-                </div>
+            <span>Habia tarea?!</span>
+          </div>
         </li>
         <li class="button-container">
           <div class="alert text-right">
-                  <span>Escribe Aqui</span>
-                </div>
+            <span>Escribe Aqui</span>
+          </div>
         </li>
-
-        
       </ul>
-      </div>
     </div>
-  
+  </div>
 </template>
 <script>
 import Vue from "vue";
@@ -50,7 +42,7 @@ import "vue-github-buttons/dist/vue-github-buttons.css";
 Vue.use(SocialSharing);
 Vue.use(VueGitHubButtons, { useCache: true });
 export default {
-  components: {  },
+  components: {},
   data() {
     return {
       documentationLink:

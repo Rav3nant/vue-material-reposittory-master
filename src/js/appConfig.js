@@ -1,14 +1,13 @@
-'use strict';
+"use strict";
 
 let appConfig = {};
 
 //
 // If we have the "app-config" element, let's load its contents into our config object.
 //
-if (document.getElementById('app-config'))
-{
-    // load the config options
-    appConfig = JSON.parse(document.getElementById('app-config').innerHTML);
+if (document.getElementById("app-config")) {
+  // load the config options
+  appConfig = JSON.parse(document.getElementById("app-config").innerHTML);
 }
 
 /**
@@ -22,7 +21,7 @@ if (document.getElementById('app-config'))
  * @return {*}
  */
 appConfig.get = function (key) {
-    return key.split('.').reduce((o, i) => o[i], this);
+  return key.split(".").reduce((o, i) => o[i], this);
 };
 
 // freeze our object

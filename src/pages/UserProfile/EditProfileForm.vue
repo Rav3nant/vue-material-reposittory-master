@@ -69,38 +69,73 @@
             </md-field>
           </div>
           <div class="md-layout-item md-size-100">
-          <label>Quien Puede ver tu Perfil?</label>
-        </div>
-        <div><input type="radio" id="todo mundo" name="visitante" value="todo mundo">
-           <label for="todo mundo">Todo Mundo</label><br>
-           <input type="radio" id="amigos de amigos" name="visitante" value="amigos de amigos">
-           <label for="amigos de amigos">Amigos de Amigos</label><br>
-            <input type="radio" id="nadie" name="visitante" value="nadie">
-           <label for="nadie">Nadie</label><br><br></div>
-        
+            <label>Quien Puede ver tu Perfil?</label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              id="todo mundo"
+              name="visitante"
+              value="todo mundo"
+            />
+              <label for="todo mundo">Todo Mundo</label><br />
+             
+            <input
+              type="radio"
+              id="amigos de amigos"
+              name="visitante"
+              value="amigos de amigos"
+            />
+              <label for="amigos de amigos">Amigos de Amigos</label><br />
+              <input type="radio" id="nadie" name="visitante" value="nadie" />  
+            <label for="nadie">Nadie</label><br /><br />
+          </div>
 
-<div class="md-layout-item md-size-100">
-          <label>Quien puede mandarte solicitud de amistad?</label>
-        </div>
-        <div><input type="radio" id="todo mundo" name="amigo" value="todo mundo">
-           <label for="todo mundo">Todo Mundo</label><br>
-           <input type="radio" id="amigos de amigos" name="amigo" value="amigos de amigos">
-           <label for="amigos de amigos">Amigos de Amigos</label><br>
-            <input type="radio" id="nadie" name="amigo" value="nadie">
-           <label for="nadie">Nadie</label><br><br>
-        </div>
-        
+          <div class="md-layout-item md-size-100">
+            <label>Quien puede mandarte solicitud de amistad?</label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              id="todo mundo"
+              name="amigo"
+              value="todo mundo"
+            />
+              <label for="todo mundo">Todo Mundo</label><br />
+             
+            <input
+              type="radio"
+              id="amigos de amigos"
+              name="amigo"
+              value="amigos de amigos"
+            />
+              <label for="amigos de amigos">Amigos de Amigos</label><br />
+              <input type="radio" id="nadie" name="amigo" value="nadie" />  
+            <label for="nadie">Nadie</label><br /><br />
+          </div>
 
-<div class="md-layout-item md-size-100">
-          <label>Quien puede seguirte?</label>
-        </div>
-        <div><input type="radio" id="todo mundo" name="seguidor" value="todo mundo">
-           <label for="todo mundo">Todo Mundo</label><br>
-           <input type="radio" id="amigos de amigos" name="seguidor" value="amigos de amigos">
-           <label for="amigos de amigos">Amigos de Amigos</label><br>
-            <input type="radio" id="nadie" name="seguidor" value="nadie">
-           <label for="nadie">Nadie</label></div>
-          
+          <div class="md-layout-item md-size-100">
+            <label>Quien puede seguirte?</label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              id="todo mundo"
+              name="seguidor"
+              value="todo mundo"
+            />
+              <label for="todo mundo">Todo Mundo</label><br />
+             
+            <input
+              type="radio"
+              id="amigos de amigos"
+              name="seguidor"
+              value="amigos de amigos"
+            />
+              <label for="amigos de amigos">Amigos de Amigos</label><br />
+              <input type="radio" id="nadie" name="seguidor" value="nadie" />  
+            <label for="nadie">Nadie</label>
+          </div>
 
           <div class="md-layout-item md-size-100 text-right">
             <md-button class="md-raised md-success"

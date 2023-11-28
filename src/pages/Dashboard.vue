@@ -73,8 +73,7 @@
           </template>
         </chart-card>
       </div>
-      
-        
+
       <div
         class="md-layout-item md-medium-size-50 md-xsmall-size-100 md-size-25"
       >
@@ -129,7 +128,7 @@
           </template>
 
           <template slot="content">
-            <p class="category">Seguidoes</p>
+            <p class="category">Seguidores</p>
             <h3 class="title">+245</h3>
           </template>
 
@@ -209,7 +208,7 @@ export default {
             tension: 0,
           }),
           low: 0,
-          high: 50, // creative tim: we recommend you to set the high sa the biggest value + something for a better look
+          high: 50,
           chartPadding: {
             top: 0,
             right: 0,
@@ -229,7 +228,7 @@ export default {
             tension: 0,
           }),
           low: 0,
-          high: 1000, // creative tim: we recommend you to set the high sa the biggest value + something for a better look
+          high: 1000,
           chartPadding: {
             top: 0,
             right: 0,

@@ -27,7 +27,6 @@
         <md-icon>notifications</md-icon>
         <p>Notificaciones</p>
       </sidebar-link>
-      
     </side-bar>
 
     <div class="main-panel">
@@ -49,7 +48,7 @@
 <script>
 import TopNavbar from "./TopNavbar.vue";
 import ContentFooter from "./ContentFooter.vue";
-import DashboardContent from './Content.vue';
+import DashboardContent from "./Content.vue";
 import MobileMenu from "@/pages/Layout/MobileMenu.vue";
 import FixedPlugin from "./Extra/FixedPlugin.vue";
 

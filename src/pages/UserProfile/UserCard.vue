@@ -7,9 +7,7 @@
     <md-card-content>
       <h6 class="category text-gray">Tu Perfil</h6>
       <h4 class="card-title">Kirbo</h4>
-      <p class="card-description">
-        "Poyo!"
-      </p>
+      <p class="card-description">"Poyo!"</p>
       <md-button class="md-round md-success">Poyo</md-button>
     </md-card-content>
   </md-card>

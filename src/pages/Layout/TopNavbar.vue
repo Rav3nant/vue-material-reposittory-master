@@ -65,7 +65,9 @@
                       <p class="hidden-lg hidden-md">Notificaciones</p>
                     </md-button>
                     <ul class="dropdown-menu dropdown-menu-right">
-                      <li><a href="#">Jacinta Perez ha respondido a tu correo</a></li>
+                      <li>
+                        <a href="#">Jacinta Perez ha respondido a tu correo</a>
+                      </li>
                       <li><a href="#">Tienes 5 tareas nuevas</a></li>
                       <li><a href="#">Andrea y Tu ahora son amigas</a></li>
                       <li><a href="#">Otra Notificacion</a></li>
@@ -92,12 +94,7 @@ export default {
   data() {
     return {
       selectedEmployee: null,
-      employees: [
-        "Pam Beesly",
-        "Angela Martin",
-        "Kelly Kapoor",
-        
-      ],
+      employees: ["Pam Beesly", "Angela Martin", "Kelly Kapoor"],
     };
   },
   methods: {
