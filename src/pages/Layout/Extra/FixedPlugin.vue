@@ -54,8 +54,7 @@ export default {
         { color: "orange", active: false },
         { color: "pink", active: false },
       ],
-      sidebarImages: [
-      ],
+      sidebarImages: [],
     };
   },
   methods: {
@@ -110,7 +109,6 @@ div.main-panel > div.fixed-plugin > div > ul::after {
 .button-container .btn {
   margin-right: 10px;
 }
-
 
 .centered-buttons {
   display: flex;

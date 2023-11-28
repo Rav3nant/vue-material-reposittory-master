@@ -1,7 +1,7 @@
 <template>
   <div
     class="sidebar"
-    :data-color="sidebarItemColor"
+    data-color="purple"
     :data-image="sidebarBackgroundImage"
     :style="sidebarStyle"
   >
@@ -43,11 +43,11 @@ export default {
   props: {
     title: {
       type: String,
-      default: "Web Girls",
+      default: "Tech Girls",
     },
     sidebarBackgroundImage: {
       type: String,
-      default: require("@/assets/img/sidebar-2.jpg"),
+      default: require("@/assets/img/Dania.jpg"),
     },
     imgLogo: {
       type: String,
@@ -55,7 +55,7 @@ export default {
     },
     sidebarItemColor: {
       type: String,
-      default: "teal",
+      default: "purple",
       validator: (value) => {
         let acceptedValues = ["", "purple", "blue", "teal", "orange", "red"];
         return acceptedValues.indexOf(value) !== -1;
@@ -85,6 +85,12 @@ export default {
 };
 </script>
 <style>
+.sidebar {
+  background-size: 100% 100% !important;
+}
+.sidebar::after {
+  background-color: rgba(0, 0, 0, 0.15) !important;
+}
 @media screen and (min-width: 991px) {
   .nav-mobile-menu {
     display: none;
