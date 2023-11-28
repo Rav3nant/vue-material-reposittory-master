@@ -2,18 +2,14 @@
   <div class="fixed-plugin" v-click-outside="closeDropDown">
     <div class="dropdown show-dropdown" :class="{ show: isOpen }">
       <a data-toggle="dropdown">
-        <i class="fa fa-cog fa-2x" @click="toggleDropDown"> </i>
+        <i class="fa fa-comments fa-2x" @click="toggleDropDown"> </i>
       </a>
-
       <ul class="dropdown-menu" :class="{ show: isOpen }">
-        <li class="centered-row">
-          <div class="text-left text-lg">
-            <h3>
-              <span>Chat Placeholder</span>
-            </h3>
-          </div>
-        </li>
+        <div class="text-left text-lg">
+          <h3>Chat</h3>
+        </div>
         <li class="button-container">
+          <span>Jacinta Perez</span>
           <div class="alert alert-info text-left">
             <span>Hiciste la tarea?</span>
           </div>
@@ -24,8 +20,8 @@
             <span>Habia tarea?!</span>
           </div>
         </li>
-        <li class="button-container">
-          <div class="alert text-right">
+        <li class="button-container bottom">
+          <div class="alert text-left">
             <span>Escribe Aqui</span>
           </div>
         </li>
@@ -59,10 +55,6 @@ export default {
         { color: "pink", active: false },
       ],
       sidebarImages: [
-        { image: require("@/assets/img/sidebar-1.jpg"), active: false },
-        { image: require("@/assets/img/sidebar-2.jpg"), active: true },
-        { image: require("@/assets/img/sidebar-3.jpg"), active: false },
-        { image: require("@/assets/img/sidebar-4.jpg"), active: false },
       ],
     };
   },
@@ -94,16 +86,40 @@ export default {
 };
 </script>
 <style>
-.centered-row {
-  height: 250px;
+.fixed-plugin {
+  padding: 5px 10px;
+  top: unset !important;
+  bottom: 50px;
+}
+
+div.main-panel > div.fixed-plugin > div > ul {
+  top: unset !important;
+  bottom: 20px;
+}
+
+div.main-panel > div.fixed-plugin > div > ul::before {
+  top: unset !important;
+  bottom: -11px;
+}
+
+div.main-panel > div.fixed-plugin > div > ul::after {
+  top: unset !important;
+  bottom: -10px;
 }
 
 .button-container .btn {
   margin-right: 10px;
 }
 
+
 .centered-buttons {
   display: flex;
   justify-content: center;
+}
+
+.bottom {
+  position: absolute !important;
+  bottom: 0 !important;
+  width: calc(100% - 20px) !important;
 }
 </style>

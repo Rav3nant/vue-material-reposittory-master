@@ -63,7 +63,6 @@ export default {
   data() {
     return {
       sidebarBackground: "teal",
-      sidebarBackgroundImage: require("@/assets/img/sidebar-2.jpg"),
     };
   },
 };
