@@ -5,12 +5,12 @@
         <edit-profile-form data-background-color="teal"> </edit-profile-form>
 
         <div class="md-layout-item md-size-100 text-left">
-          <h4>No es tu cuenta?</h4>
+          <h4>¿No es tu cuenta?</h4>
           <router-link to="login">
             <md-button class="md-raised md-success">Login</md-button>
           </router-link>
           <br />
-          <h4>No tienes una cuenta?</h4>
+          <h4>¿No tienes una cuenta?</h4>
           <router-link to="signIn">
             <md-button class="md-raised md-success">Registrar</md-button>
           </router-link>

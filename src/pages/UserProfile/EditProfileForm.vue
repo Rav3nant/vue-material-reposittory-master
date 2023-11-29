@@ -10,12 +10,6 @@
         <div class="md-layout">
           <div class="md-layout-item md-small-size-100 md-size-33">
             <md-field>
-              <label>Compañia (deshabilitado)</label>
-              <md-input v-model="disabled" disabled></md-input>
-            </md-field>
-          </div>
-          <div class="md-layout-item md-small-size-100 md-size-33">
-            <md-field>
               <label>Nombre de Usuario</label>
               <md-input v-model="username" type="text"></md-input>
             </md-field>
@@ -69,7 +63,10 @@
             </md-field>
           </div>
           <div class="md-layout-item md-size-100">
-            <label>Quien Puede ver tu Perfil?</label>
+            <h5>Privacidad</h5>
+          </div>
+          <div class="md-layout-item md-size-100">
+            <label>¿Quien Puede ver tu Perfil?</label>
           </div>
           <div>
             <input
@@ -92,7 +89,7 @@
           </div>
 
           <div class="md-layout-item md-size-100">
-            <label>Quien puede mandarte solicitud de amistad?</label>
+            <label>¿Quien puede mandarte solicitud de amistad?</label>
           </div>
           <div>
             <input
@@ -115,7 +112,7 @@
           </div>
 
           <div class="md-layout-item md-size-100">
-            <label>Quien puede seguirte?</label>
+            <label>¿Quien puede seguirte?</label>
           </div>
           <div>
             <input
@@ -138,9 +135,7 @@
           </div>
 
           <div class="md-layout-item md-size-100 text-right">
-            <md-button class="md-raised md-success"
-              >Actualizar Perfil</md-button
-            >
+            <md-button class="md-primary" @click="notifyVue('bottom', 'center')">Actualizar Perfil</md-button>
           </div>
         </div>
       </md-card-content>
@@ -158,9 +153,9 @@ export default {
   },
   data() {
     return {
-      username: null,
+      username: "kirbo",
       disabled: null,
-      emailadress: null,
+      emailadress: "kirbo64@unison.mx",
       lastname: null,
       firstname: null,
       address: null,
@@ -168,7 +163,24 @@ export default {
       country: null,
       code: null,
       aboutme: "Quiero acostarme a dormir",
+      type: ["", "info", "success", "warning", "danger"],
+      notifications: {
+        topCenter: false,
+      },
     };
+  },
+  methods: {
+    notifyVue(verticalAlign, horizontalAlign) {
+      var color = Math.floor(Math.random() * 4 + 1);
+      this.$notify({
+        message:
+          "Perfil actualizado con éxito.",
+        icon: "add_alert",
+        horizontalAlign: horizontalAlign,
+        verticalAlign: verticalAlign,
+        type: this.type[color],
+      });
+    },
   },
 };
 </script>

@@ -62,7 +62,10 @@ export default {
   },
   data() {
     return {
-      sidebarBackground: "teal",
+      username: "kirbo",
+      emailaddress: "kirbo64@unison.mx",
+      sidebarBackground: "purple",
+	    sidebarBackgroundImage: require("@/assets/img/Dania.jpg"),
     };
   },
 };

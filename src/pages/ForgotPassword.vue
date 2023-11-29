@@ -9,31 +9,22 @@
         <p class="category"></p>
       </md-card-header>
     </md-card>
-    <div class="md-layout-item md-small-size-100 md-size-33">
+    <div class="md-layout-item md-small-size-100 md-size-50">
       <md-field>
-        <label>Nombre de Usuario</label>
+        <label>Correo registrado</label>
         <md-input type="text" required></md-input>
       </md-field>
     </div>
     <div class="md-layout-item md-small-size-100 md-size-50">
       <md-field>
-        <label>Contraseña</label>
-        <md-input type="password" required></md-input>
+        <label>Confirmar correo</label>
+        <md-input type="text" required></md-input>
       </md-field>
     </div>
     <div class="md-layout-item md-size-100 text-left">
-      <router-link to="dashboard">
-        <md-button class="md-raised md-success">Login</md-button>
-      </router-link>
-      <router-link to="forgotPassword">
-        <md-button class="md-raised md-warning">Olvidé mi contraseña</md-button>
-      </router-link>
-    </div>
-    <br>
-    <div class="md-layout-item md-small-size-100 md-size-50">
-      <h4>¿No tienes una cuenta?</h4>
-      <router-link to="signIn">
-        <md-button class="md-raised md-success">Registrar</md-button>
+      <md-button class="md-primary" @click="notifyVue('bottom', 'left')">Enviar</md-button>
+      <router-link to="login">
+        <md-button class="md-raised">Regresar a Login</md-button>
       </router-link>
     </div>
   </form>
@@ -44,8 +35,25 @@ export default {
   data() {
     return {
       logo: require("@/assets/img/tech-girls.jpg"),
+      type: ["", "info", "success", "warning", "danger"],
+      notifications: {
+        topCenter: false,
+      },
     };
-  }
+  },
+  methods: {
+    notifyVue(verticalAlign, horizontalAlign) {
+      var color = Math.floor(Math.random() * 4 + 1);
+      this.$notify({
+        message:
+          "Se ha enviado una liga para resetear tu contraseña al correo registrado.",
+        icon: "add_alert",
+        horizontalAlign: horizontalAlign,
+        verticalAlign: verticalAlign,
+        type: this.type[color],
+      });
+    },
+  },
 };
 </script>
 

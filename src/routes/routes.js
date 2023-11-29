@@ -3,19 +3,18 @@ import DashboardLayout from "@/pages/Layout/DashboardLayout.vue";
 import Dashboard from "@/pages/Dashboard.vue";
 import UserProfile from "@/pages/UserProfile.vue";
 import TableList from "@/pages/TableList.vue";
-import Typography from "@/pages/Typography.vue";
 import Icons from "@/pages/Icons.vue";
-import Maps from "@/pages/Maps.vue";
 import Notifications from "@/pages/Notifications.vue";
-import UpgradeToPRO from "@/pages/UpgradeToPRO.vue";
 import Login from "@/pages/Login.vue";
 import SignIn from "@/pages/SignIn.vue";
+import ForgotPassword from "@/pages/ForgotPassword.vue";
+
 
 const routes = [
   {
     path: "/",
     component: DashboardLayout,
-    redirect: "/dashboard",
+    redirect: "/login",
     children: [
       {
         path: "dashboard",
@@ -33,34 +32,15 @@ const routes = [
         component: TableList,
       },
       {
-        path: "typography",
-        name: "Typography",
-        component: Typography,
-      },
-      {
         path: "icons",
         name: "Post Nuevo",
         component: Icons,
-      },
-      {
-        path: "maps",
-        name: "Maps",
-        meta: {
-          hideFooter: true,
-        },
-        component: Maps,
       },
       {
         path: "notifications",
         name: "Notificaciones",
         component: Notifications,
       },
-      {
-        path: "upgrade",
-        name: "Upgrade to PRO",
-        component: UpgradeToPRO,
-      },
-
       {
         path: "login",
         name: "Login",
@@ -70,6 +50,11 @@ const routes = [
         path: "signIn",
         name: "Registro",
         component: SignIn,
+      },
+      {
+        path: "forgotPassword",
+        name: "Recuperar Contraseña",
+        component: ForgotPassword,
       },
     ],
   },
