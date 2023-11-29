@@ -29,7 +29,7 @@
         <md-button class="md-raised md-warning">Olvidé mi contraseña</md-button>
       </router-link>
     </div>
-    <br>
+    <br />
     <div class="md-layout-item md-small-size-100 md-size-50">
       <h4>¿No tienes una cuenta?</h4>
       <router-link to="signIn">
@@ -45,7 +45,7 @@ export default {
     return {
       logo: require("@/assets/img/tech-girls.jpg"),
     };
-  }
+  },
 };
 </script>
 

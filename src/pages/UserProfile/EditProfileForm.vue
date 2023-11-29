@@ -135,7 +135,9 @@
           </div>
 
           <div class="md-layout-item md-size-100 text-right">
-            <md-button class="md-primary" @click="notifyVue('bottom', 'center')">Actualizar Perfil</md-button>
+            <md-button class="md-primary" @click="notifyVue('bottom', 'center')"
+              >Actualizar Perfil</md-button
+            >
           </div>
         </div>
       </md-card-content>
@@ -173,8 +175,7 @@ export default {
     notifyVue(verticalAlign, horizontalAlign) {
       var color = Math.floor(Math.random() * 4 + 1);
       this.$notify({
-        message:
-          "Perfil actualizado con éxito.",
+        message: "Perfil actualizado con éxito.",
         icon: "add_alert",
         horizontalAlign: horizontalAlign,
         verticalAlign: verticalAlign,

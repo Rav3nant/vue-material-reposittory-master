@@ -8,8 +8,8 @@
     >
       <mobile-menu slot="content"></mobile-menu>
       <sidebar-link to="/dashboard">
-        <md-icon>dashboard</md-icon>
-        <p>Tablero Principal</p>
+        <md-icon>home</md-icon>
+        <p>Home</p>
       </sidebar-link>
       <sidebar-link to="/user">
         <md-icon>person</md-icon>
@@ -26,6 +26,10 @@
       <sidebar-link to="/notifications">
         <md-icon>notifications</md-icon>
         <p>Notificaciones</p>
+      </sidebar-link>
+      <sidebar-link to="/analytics">
+        <md-icon>analytics</md-icon>
+        <p>Analíticas</p>
       </sidebar-link>
     </side-bar>
 
@@ -65,7 +69,7 @@ export default {
       username: "kirbo",
       emailaddress: "kirbo64@unison.mx",
       sidebarBackground: "purple",
-	    sidebarBackgroundImage: require("@/assets/img/Dania.jpg"),
+      sidebarBackgroundImage: require("@/assets/img/Dania.jpg"),
     };
   },
 };

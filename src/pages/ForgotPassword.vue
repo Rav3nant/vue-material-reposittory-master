@@ -22,7 +22,9 @@
       </md-field>
     </div>
     <div class="md-layout-item md-size-100 text-left">
-      <md-button class="md-primary" @click="notifyVue('bottom', 'left')">Enviar</md-button>
+      <md-button class="md-primary" @click="notifyVue('bottom', 'left')"
+        >Enviar</md-button
+      >
       <router-link to="login">
         <md-button class="md-raised">Regresar a Login</md-button>
       </router-link>

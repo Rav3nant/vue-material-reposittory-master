@@ -48,7 +48,7 @@ export default {
     return {
       logo: require("@/assets/img/tech-girls.jpg"),
     };
-  }
+  },
 };
 </script>
 

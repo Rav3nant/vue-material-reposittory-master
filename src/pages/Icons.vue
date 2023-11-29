@@ -11,7 +11,7 @@
           <md-card-content>
             <quill-editor />
           </md-card-content>
-          <router-link to="user">
+          <router-link to="dashboard">
             <md-button class="md-raised md-success">Crear Post</md-button>
           </router-link>
         </md-card>

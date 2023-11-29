@@ -1,6 +1,7 @@
 import DashboardLayout from "@/pages/Layout/DashboardLayout.vue";
 
 import Dashboard from "@/pages/Dashboard.vue";
+import Analytics from "@/pages/Analytics.vue";
 import UserProfile from "@/pages/UserProfile.vue";
 import TableList from "@/pages/TableList.vue";
 import Icons from "@/pages/Icons.vue";
@@ -8,7 +9,6 @@ import Notifications from "@/pages/Notifications.vue";
 import Login from "@/pages/Login.vue";
 import SignIn from "@/pages/SignIn.vue";
 import ForgotPassword from "@/pages/ForgotPassword.vue";
-
 
 const routes = [
   {
@@ -20,6 +20,11 @@ const routes = [
         path: "dashboard",
         name: "Tablero Principal",
         component: Dashboard,
+      },
+      {
+        path: "analytics",
+        name: "Analíticas",
+        component: Analytics,
       },
       {
         path: "user",
